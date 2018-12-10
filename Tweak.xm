@@ -193,11 +193,11 @@ static void reloadPrefs() {
 
 	enabled = [prefs objectForKey:@"enabled"] ? [(NSNumber *)[prefs objectForKey:@"enabled"] boolValue] : true;
 	timeType = [prefs objectForKey:@"timeType"] ? [(NSNumber *)[prefs objectForKey:@"timeType"] intValue] : 1;
-  changeTimeSize = [prefs objectForKey:@"changeTimeSize"] ? [[prefs objectForKey:@"changeTimeSize"] floatValue] : changeTimeSize;
-  changeDateSize = [prefs objectForKey:@"changeDateSize"] ? [[prefs objectForKey:@"changeDateSize"] floatValue] : changeDateSize;
-  notiUpOrDown = [prefs objectForKey:@"notiUpOrDown"] ? [[prefs objectForKey:@"notiUpOrDown"] floatValue] : notiUpOrDown;
-  yTimeDate = [prefs objectForKey:@"yTimeDate"] ? [[prefs objectForKey:@"yTimeDate"] floatValue] : yTimeDate;
-  yDateOnly = [prefs objectForKey:@"yDateOnly"] ? [[prefs objectForKey:@"yDateOnly"] floatValue] : yDateOnly;
+  	changeTimeSize = [prefs objectForKey:@"changeTimeSize"] ? [[prefs objectForKey:@"changeTimeSize"] floatValue] : changeTimeSize;
+ 	changeDateSize = [prefs objectForKey:@"changeDateSize"] ? [[prefs objectForKey:@"changeDateSize"] floatValue] : changeDateSize;
+  	notiUpOrDown = [prefs objectForKey:@"notiUpOrDown"] ? [[prefs objectForKey:@"notiUpOrDown"] floatValue] : notiUpOrDown;
+  	yTimeDate = [prefs objectForKey:@"yTimeDate"] ? [[prefs objectForKey:@"yTimeDate"] floatValue] : yTimeDate;
+  	yDateOnly = [prefs objectForKey:@"yDateOnly"] ? [[prefs objectForKey:@"yDateOnly"] floatValue] : yDateOnly;
 
 	}
 
