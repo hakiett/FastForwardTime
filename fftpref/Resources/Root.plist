@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+					<key>cell</key>
+					<string>PSSwitchCell</string>
+					<key>default</key><true/>
+					<key>defaults</key>
+					<string>com.kaitouiet.fastforwardtime</string>
+					<key>label</key>
+					<string>Enable seconds</string>
+					<key>key</key>
+					<string>enabled</string>
+					<key>PostNotification</key>
+					<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+				</dict>
+
+				<dict>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>defaults</key>
+			<string>com.kaitouiet.fastforwardtime</string>
+			<key>key</key>
+			<string>timeType</string>
+			<key>validTitles</key>
+			<array>
+				<string>12 Hr</string>
+				<string>24 Hr</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+			</array>
+			<key>default</key>
+			<integer>1</integer>
+			<key>PostNotification</key>
+            <string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+		</dict>
+
+		<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+	<key>footerText</key>
+	<string>Use this to adjust the font size of the time! 0 is default font size.</string>
+</dict>
+
+<dict>
+	<key>cell</key>
+	<string>PSSliderCell</string>
+	<key>defaults</key>
+	<string>com.kaitouiet.fastforwardtime</string>
+	<key>max</key>
+	<real>100</real>
+	<key>min</key>
+	<real>0</real>
+	<key>PostNotification</key>
+	<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+	<key>key</key>
+	<string>changeTimeSize</string>
+	<key>showValue</key>
+	<true/>
+</dict>
+
+
+		<dict>
+	<key>cell</key>
+	<string>PSGroupCell</string>
+	<key>footerText</key>
+	<string>Use this to adjust the font size of the date! 0 is default font size.</string>
+</dict>
+
+<dict>
+	<key>cell</key>
+	<string>PSSliderCell</string>
+	<key>defaults</key>
+	<string>com.kaitouiet.fastforwardtime</string>
+	<key>max</key>
+	<real>100</real>
+	<key>min</key>
+	<real>0</real>
+	<key>PostNotification</key>
+	<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+	<key>key</key>
+	<string>changeDateSize</string>
+	<key>showValue</key>
+	<true/>
+</dict>
+<dict>
+					<key>cell</key>
+					<string>PSGroupCell</string>
+					<key>footerText</key>
+					<string>Respring is only needed if you reset the font sizes to 0.</string>
+				</dict>
+				<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>respring</string>
+			<key>label</key>
+			<string>Respring</string>
+				</dict>
+				<dict>
+					 <key>cell</key>
+					 <string>PSGroupCell</string>
+					 <key>footerText</key>
+					 <string>Enter a number to move the date up or down. Negative numbers go up, postive numbers go down.</string>
+				 </dict>
+				 <dict>
+				 	<key>cell</key>
+				 	<string>PSSliderCell</string>
+				 	<key>defaults</key>
+				 	<string>com.kaitouiet.fastforwardtime</string>
+				 	<key>max</key>
+				 	<real>200</real>
+				 	<key>min</key>
+				 	<real>-200</real>
+				 	<key>PostNotification</key>
+				 	<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+				 	<key>key</key>
+				 	<string>yDateOnly</string>
+				 	<key>showValue</key>
+				 	<true/>
+				 </dict>
+			<dict>
+				 <key>cell</key>
+				 <string>PSGroupCell</string>
+				 <key>footerText</key>
+				 <string>Enter a number to move both the time and date up or down. Negative numbers go up, postive numbers go down.</string>
+			 </dict>
+			 <dict>
+				<key>cell</key>
+				<string>PSSliderCell</string>
+				<key>defaults</key>
+				<string>com.kaitouiet.fastforwardtime</string>
+				<key>max</key>
+				<real>200</real>
+				<key>min</key>
+				<real>-200</real>
+				<key>PostNotification</key>
+				<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+				<key>key</key>
+				<string>yTimeDate</string>
+				<key>showValue</key>
+				<true/>
+			 </dict>
+				<dict>
+					 <key>cell</key>
+					 <string>PSGroupCell</string>
+					 <key>footerText</key>
+					 <string>Enter a number to move the notifications up or down. Negative numbers go up, postive numbers go down.</string>
+				 </dict>
+				 <dict>
+					<key>cell</key>
+					<string>PSSliderCell</string>
+					<key>defaults</key>
+					<string>com.kaitouiet.fastforwardtime</string>
+					<key>max</key>
+					<real>200</real>
+					<key>min</key>
+					<real>-200</real>
+					<key>PostNotification</key>
+					<string>com.kaitouiet.fastforwardtime/ReloadPrefs</string>
+					<key>key</key>
+					<string>notiUpOrDown</string>
+					<key>showValue</key>
+					<true/>
+				 </dict>
+						<dict>
+							<key>cell</key>
+							<string>PSGroupCell</string>
+							<key>label</key>
+							<string>Developer:</string>
+						</dict>
+
+						<dict>
+						<key>action</key>
+						<string>openTwitter</string>
+						<key>cell</key>
+						<string>PSButtonCell</string>
+						<key>icon</key>
+						<string>twitter.png</string>
+						<key>label</key>
+						<string>@kaitouiet</string>
+						</dict>
+
+		<dict>
+					<key>cell</key>
+					<string>PSGroupCell</string>
+					<key>footerAlignment</key>
+					<integer>1</integer>
+					<key>footerText</key>
+					<string>© 2018 Kiet Ha</string>
+				</dict>
+
+
+				<dict>
+							<key>cell</key>
+							<string>PSGroupCell</string>
+							<key>footerAlignment</key>
+							<integer>1</integer>
+							<key>footerText</key>
+							<string>Love to Tonyk7🖤 </string>
+						</dict>
+
+
+	</array>
+	<key>title</key>
+	<string>FFTPref</string>
+</dict>
+</plist>

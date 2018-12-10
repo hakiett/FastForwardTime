@@ -1,0 +1,9 @@
+Package: com.kaitouiet.fastforwardtime
+Name: FastForwardTime
+Depends: mobilesubstrate
+Version: 2.0.1
+Architecture: iphoneos-arm
+Description: Adds seconds to your lockscreen clock, change font size of time and date, and moves them!
+Maintainer: Kiet Ha
+Author: Kiet Ha
+Section: Tweaks
