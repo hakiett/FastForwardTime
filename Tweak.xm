@@ -27,12 +27,6 @@
 -(void)updateSeconds;
 @end
 
-@interface SBDashBoardCombinedListViewController : UIViewController
--(void) _updateListViewContentInset;
--(void) _layoutListView;
--(UIEdgeInsets) _listViewDefaultContentInsets;
-@end
-
 @interface SBLockStateAggregator : NSObject {
         unsigned long long _lockState;
 }
