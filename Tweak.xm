@@ -68,7 +68,7 @@ static CGFloat yDateOnly = 0;
 
 -(CGRect)_timeLabelFrameForAlignmentPercent:(double)arg1 {
 
-	SBUILegibilityLabel *timeLabel = MSHookIvar<SBUILegibilityLabel *>(self, "_timeLabel");
+  SBUILegibilityLabel *timeLabel = MSHookIvar<SBUILegibilityLabel *>(self, "_timeLabel");
   CGRect timing = %orig;
   return CGRectMake (timing.origin.x, timing.origin.y + yTimeDate, [self expectedLabelWidth:timeLabel], timing.size.height);
 
@@ -106,18 +106,17 @@ static CGFloat yDateOnly = 0;
 
   if (enabled) {
 
-	   if (timeLabel != nil) { // Extra check just to be sure
-		// Set the date formatter to hour:minute:second (like stock just extra second)
-		    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        if (timeLabel != nil) { // Extra check just to be sure
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init]; // Set the date formatter to hour:minute:second (like stock just extra second)
         if (timeType == 2) {
             [dateFormatter setDateFormat:@"HH:mm:ss"]; // 24hr
         } else if (timeType == 1) {
             [dateFormatter setDateFormat:@"h:mm:ss"]; // 12hr
         }
 		// Get NSString from date and format it using dateFormater then set the time label
-		  NSString *currentTimeString = [dateFormatter stringFromDate:[NSDate date]];
+		NSString *currentTimeString = [dateFormatter stringFromDate:[NSDate date]];
 	   	[timeLabel setString:currentTimeString];
-			[timeLabel setFrame:CGRectMake(timeLabel.frame.origin.x, timeLabel.frame.origin.y, [self expectedLabelWidth:timeLabel], timeLabel.frame.size.height)];
+		[timeLabel setFrame:CGRectMake(timeLabel.frame.origin.x, timeLabel.frame.origin.y, [self expectedLabelWidth:timeLabel], timeLabel.frame.size.height)];
     }
   }
 
