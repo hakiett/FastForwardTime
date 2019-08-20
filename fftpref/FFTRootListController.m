@@ -63,7 +63,7 @@ UILabel* underLabel;
 		underLabel = [[UILabel alloc] initWithFrame:botFrame];
 		[underLabel setNumberOfLines:1];
 		underLabel.font = [UIFont fontWithName:@"GillSans-Light" size:26];
-		[underLabel setText:@"Version 2.0.1"];
+		[underLabel setText:@"Version 2.0.2"];
 		[underLabel setBackgroundColor:[UIColor clearColor]];
 		underLabel.textColor = [UIColor grayColor];
 		underLabel.textAlignment = NSTextAlignmentCenter;
