@@ -1,6 +1,8 @@
-export TARGET = iphone:9.2:9.2
+INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
+
+ARCHS = arm64 arm64e
 
 BUNDLE_NAME = FFTPref
 FFTPref_FILES = FFTRootListController.m
