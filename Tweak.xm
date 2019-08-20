@@ -1,4 +1,6 @@
 //Copyright © 2018-2019 Kiet Ha
+//github messes with the indentation for some reason so sorry to those reading the code lol
+
 /* debug purposes
 
 #ifdef DEBUG
